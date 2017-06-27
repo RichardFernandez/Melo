@@ -1,0 +1,76 @@
+/*ESTILOS PARA EL ACCESO*/
+.acceso{
+	height: 100vh;
+	width: 100vw;
+	background-image: url('../images/access-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.formulario{
+	max-width: 400px;
+	border: 1px solid #cccbcc;
+	padding:0;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+
+.logo-container{
+	background: #84b33b;
+	padding: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.login{
+	margin: 15px 10px;
+}
+
+/*ESTILOS PARA LA NAVEGACION PRINCIPAL*/
+.bg-inverse{
+	background-color: #84b33b !important;
+}
+
+.navbar-inverse .navbar-nav .nav-link{
+	color: white;
+}
+
+
+/*ASIDE DE NAVEGACION*/
+
+.bg-faded{
+	background: #d9e2e7;
+}
+
+/*ESTILOS PARA EL PANEL DE CONTROL*/
+.enlaces-panel{
+	background: #84b33b;
+	display: block;
+	margin: 10px 0;
+	padding: 5px;
+	text-align: center;
+}
+
+.enlaces-panel a{
+	color:white;
+}
+
+.resumenes{
+	background: #f0f0ef;
+	margin:10px 0;
+	padding: 10px;
+}
+.enlaces-generales-panel{
+	display: block;
+	padding: 5px;
+	text-align: center;
+}
+
+.enlaces-generales-panel a{
+	color:#565a5c;
+}
+
+/*Estilos generales*/
+.titulo{
+	border-bottom: 1px solid #84b33b;
+}
