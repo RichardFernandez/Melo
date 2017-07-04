@@ -10,13 +10,13 @@ class PolizasController extends Controller
 {
     public function index(){
 
-    	return view('informes.tipospolizas.index');
+    	return view('informe.tipospolizas.index');
 
     }
 
     public function create(){
 
-        return view('informes.tipospolizas.create');
+        return view('informe.tipospolizas.create');
 
     }
 

@@ -159,6 +159,7 @@ return [
         /*mis propios providers*/
 
         Collective\Html\HtmlServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
 
     ],
 

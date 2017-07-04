@@ -17,9 +17,9 @@ Route::get('/control-panel', function(){
 	return view('controlpanel');
 });
 
-/*Rutas para el sistema de indforme financiero*/
+/*Rutas para el sistema de informe financiero*/
 
-Route::group(['prefix' => 'informes'], function(){
+Route::group(['prefix' => 'informe'], function(){
 
    Route::resource('tipospolizas', 'PolizasController');
 
