@@ -5,7 +5,7 @@
       <a class="navbar-brand" href="#"><img src="{{ asset('images/logo-melo.png') }}" alt="logo melo" width="150"></a>
 
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav mr-auto pincipal">
+        <ul class="navbar-nav ml-auto principal">
           <li class="nav-item active">
             <a class="nav-link" href="#">Panel de control <span class="sr-only">(current)</span></a>
           </li>

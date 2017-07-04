@@ -12,21 +12,24 @@
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
     <link href="{{ asset('css/melo.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/informe.css') }}" rel="stylesheet">
 
   </head>
 
   <body>
 
-   @include('template.partials.nav')
+   @include('template.partialsinforme.nav')
 
   <div class="container-fluid">
+
+   @include('flash::message')
 
     @yield('content')
     
   </div>
   
   <footer>
-    @include('template.partials.footer')
+    @include('template.partialsinforme.footer')
   </footer>
 
    

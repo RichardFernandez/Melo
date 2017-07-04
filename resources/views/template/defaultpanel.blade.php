@@ -18,7 +18,7 @@
 
   <body>
   
-  @include('template.partials.panelnav')
+  @include('template.partialsinforme.panelnav')
   
 
   <div class="container-fluid">
@@ -28,7 +28,7 @@
   </div>
   
   <footer>
-    @include('template.partials.footer')
+    @include('template.partialsinforme.footer')
   </footer>
 
    

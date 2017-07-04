@@ -28,6 +28,6 @@ Route::group(['prefix' => 'informe'], function(){
    	    'as' => 'informes.tipospolizas.destroy'
    	]);
 
-
+   
 
 });
