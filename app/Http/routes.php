@@ -25,9 +25,14 @@ Route::group(['prefix' => 'informe'], function(){
 
    Route::get('tipospolizas/{id}/destroy', [
    	    'uses' => 'PolizasController@destroy',
-   	    'as' => 'informes.tipospolizas.destroy'
+   	    'as' => 'informe.tipospolizas.destroy'
    	]);
 
-   
+   Route::resource('cuentas', 'CuentasController');
+
+   Route::get('cuentas/{id}/destroy', [
+        'uses' => 'CuentasController@destroy',
+        'as' => 'informe.cuentas.destroy'
+   	]);
 
 });

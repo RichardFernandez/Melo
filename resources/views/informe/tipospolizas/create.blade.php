@@ -1,4 +1,4 @@
-@extends('template.default')
+@extends('template.defaultinforme')
 @section('title', 'captura de polizas')
 @section('content')
 
@@ -6,7 +6,7 @@
   	<h2 class="titulos">
   		TIPOS DE PÓLIZAS
   	</h2>
-    {!! Form::open('route' => 'informe.tipospolizas.store', 'method' => 'POST') !!}
+    {!! Form::open(['route' => 'informe.tipospolizas.store', 'method' => 'POST']) !!}
 
        <div class="form-group">
        	  {!! Form::label('op', 'Obra en proceso:') !!}

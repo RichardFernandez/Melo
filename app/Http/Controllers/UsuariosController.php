@@ -6,17 +6,17 @@ use Illuminate\Http\Request;
 
 use Melo\Http\Requests;
 
-class PolizasController extends Controller
+class UsuariosController extends Controller
 {
     public function index(){
 
-    	return view('informe.tipospolizas.index');
+    	return view('informe.usuarios.index');
 
     }
 
     public function create(){
 
-        return view('informe.tipospolizas.create');
+        return view('informe.usuarios.create');
 
     }
 
@@ -25,7 +25,7 @@ class PolizasController extends Controller
     }
 
     public function edit(){
-    return view('informe.tipospolizas.edit');
+    return view('informe.usuarios.edit');
     }
 
     public function update(){

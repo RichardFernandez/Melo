@@ -12,52 +12,45 @@
 	  </div>	
 	</div>
 
-	<div class="form-polizas-container">
-	  <div class="row">
-	  	<div class="col-xs-8 col-md-8 offset-2">
-	  	     {{Form::open(['route' => ['informe.tipospolizas.edit', 'hola'], 'method' => 'GET'])}}
-	  	        <div class="form-group row">
-	  	  	       {{Form::label('obra_proceso', 'Obra en Proceso',['class' => 'col-3 col-form-label'])}}
-	  	  	       <div class="col-6">
-	  	  	   	     {{Form::text('obra_proceso', null, ['class' => 'form-control', 'required'])}}
-	  	  	       </div>
-	  	        </div>	
-	  	        <div class="form-group row">
-	  	  	       {{Form::label('vivienda_terminada', 'Vivienda terminada',['class' => 'col-3 col-form-label'])}}
-	  	  	       <div class="col-6">
-	  	  	   	     {{Form::text('vivienda_terminada', null, ['class' => 'form-control', 'required'])}}
-	  	  	       </div>
-	  	        </div>	
-	  	        <div class="form-group row">
-	  	  	       {{Form::label('costo_venta', 'Costo de venta',['class' => 'col-3 col-form-label'])}}
-	  	  	       <div class="col-6">
-	  	  	   	     {{Form::text('costo_venta', null, ['class' => 'form-control', 'required'])}}
-	  	  	       </div>
-	  	        </div>	
-	  	        <div class="form-group row">
-	  	  	       {{Form::label('provision_obra', 'Provisión de obra',['class' => 'col-3 col-form-label'])}}
-	  	  	       <div class="col-6">
-	  	  	   	     {{Form::text('procision_obra', null, ['class' => 'form-control', 'required'])}}
-	  	  	       </div>
-	  	        </div>	
-	  	        <div class="form-group row">
-	  	  	       {{Form::label('cancelacion_provision_obra', 'Cancelación de provisión de obra',['class' => 'col-3 col-form-label'])}}
-	  	  	       <div class="col-6">
-	  	  	   	     {{Form::text('cancelacion_provision_obra', null, ['class' => 'form-control', 'required'])}}
-	  	  	       </div>
-	  	        </div>	
-	  	        <div class="form-group row">
-	  	          <div class="col-md-9 ml-auto">
-	  	          	<div class="form-group">
-        				{{ Form::submit('EDITAR', ['class' => 'btn btn-warning']) }}
-        			</div>
-	  	          </div>
-	  	        </div>	
-	  	     {{Form::close()}}   
-	  	</div>
-	  </div>
-		
-	</div>
+		<div class="form-polizas-container">
+		  <div class="row">
+		  	<div class="col-xs-6 offset-2">
+		  		<table class="table table-hover">
+
+		  		   <tbody>
+		  		   	 <tr>
+		  		   	 	<th scope="row">Obra en Proceso:</th>
+		  		   	 	<td></td>
+		  		   	 </tr>
+		  		   </tbody>
+		  		   <tr>
+		  		   	 	<th scope="row">Vivienda terminada:</th>
+		  		   	 	<td></td>
+		  		   	</tr>
+		  		   	<tr>
+		  		   		<th scope="row">Costo de venta:</th>
+		  		   		<td></td>
+		  		   	</tr>
+		  		   	<tr>
+		  		   		<th scope="row">Provisión de obra:</th>
+		  		   		<td></td>
+		  		   	</tr>
+		  		   	<tr>
+		  		   		<th scope="row">Cancelación de provisión de obra:</th>
+		  		   		<td></td>
+		  		   	</tr>	               
+		  		   	 <tr>
+	                	<td>
+	                		<a href="{{route('informe.tipospolizas.edit', 1)}}" title="" class="btn btn-warning">EDITAR</a>
+	                	</td>
+	                </tr>
+		  			
+		  		</table>
+		  	</div>
+		  </div>
+			
+		</div>
+
 
  @endsection
   
