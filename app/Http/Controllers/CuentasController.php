@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 
 use Melo\Http\Requests;
 
+use Melo\Parametro;
+
 class CuentasController extends Controller
 {
       public function index()
       {
           return view('informe.cuentas.index');
+
       }
 
       public function create(){

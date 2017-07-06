@@ -4,6 +4,12 @@
 
 @section('content')
 
+    <div class="buscador-usuarios-container">
+    	
+    </div>
+
+    <div class="boton-agregar"></div>
+
 	<div class="title-container">
 	  <div class="row">
 	  	<div class="col-xs-8 col-md-6 offset-2">
@@ -14,7 +20,7 @@
 
 	<div class="form-usuarios-container">
 	  <div class="row">
-	  	<div class="col-xs-6 offset-2">
+	  	<div class="col-xs-10 offset-2">
 	  		<table class="table">
 	  		    <thead class="thead-inverse">
 	  		    	<tr>
@@ -22,7 +28,7 @@
 	  		    		<th>Usuario</th>
 	  		    		<th>Estatus</th>
 	  		    		<th>Editar</th>
-                        <th>ver</th>
+                        <th>Ver</th>
 	  		    	</tr>
 	  		    </thead>
 	  		    <tbody>

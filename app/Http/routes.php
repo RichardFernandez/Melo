@@ -35,4 +35,22 @@ Route::group(['prefix' => 'informe'], function(){
         'as' => 'informe.cuentas.destroy'
    	]);
 
+   Route::resource('usuarios', 'UsuariosController');
+
+   Route::get('usuarios/{id}/destroy',[
+        'uses' => 'UsuariosController@destroy',
+        'as' => 'informe.usuarios.destroy'
+    ]);
+
+   /*Rutas de proyectos*/
+
+   Route::resource('proyectos', 'ProyectosController');
+
+   Route::get('proyectos/{id}/destroy', [
+        'uses' => 'ProyectosController@destroy',
+        'as' => 'informe.proyectos.destroy'
+    ]);
+
+   /* Final de rutas de informe financiero*/
+
 });
