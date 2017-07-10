@@ -12,7 +12,7 @@
   	</div>
   	<div class="col-md-4">
   		<div class="boton-agregar">
-  			<a href="" title="" class="btn btn-success">Agregar nuevo proyecto</a>
+  			<a href="{{route('informe.proyectos.create')}}" title="" class="btn btn-success">Agregar nuevo proyecto</a>
   		</div>
   	</div>
   </div>

@@ -6,21 +6,19 @@ use Illuminate\Http\Request;
 
 use Melo\Http\Requests;
 
-use Melo\Parametro;
-
-class CuentasController extends Controller
+class EmpleadosController extends Controller
 {
-      public function index()
+     public function index()
       {
-          $cuentas = Parametro::all();
+          // $empleados = Empleado::all();
           // dd($cuentas);
-          return view('informe.cuentas.index')->with('cuentas', $cuentas);
+          return view('empleados.index');
 
       }
 
       public function create(){
 
-          return view('informe.cuentas.create');
+          return view('empleados.create');
 
       }
 
@@ -29,7 +27,7 @@ class CuentasController extends Controller
       }
 
       public function edit(){
-      	return view('informe.cuentas.edit');
+      	return view('empleados.edit');
       }
 
       public function update(){

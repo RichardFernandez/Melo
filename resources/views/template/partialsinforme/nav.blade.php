@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Panel de control <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{ url('/control-panel') }}">Panel de control <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Empleados</a>
@@ -17,6 +17,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Empresas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Catalogos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sistemas</a>
@@ -60,10 +63,10 @@
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Nav item again</a>
+              <a class="nav-link" href="{{ route('informe.proyectos.index') }}">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">One more nav</a>
+              <a class="nav-link" href="{{ route('informe.usuarios.index') }}">Usuarios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Configuración</a>

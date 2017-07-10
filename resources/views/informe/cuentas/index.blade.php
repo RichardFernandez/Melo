@@ -18,28 +18,35 @@
 	  		<table class="table table-hover">
 
 	  		   <tbody>
+	  		    @foreach($cuentas as $cuenta)
 	  		   	 <tr>
+
 	  		   	 	<th scope="row">Cta. de Provisión de urbanización:</th>
-	  		   	 	<td></td>
+	  		   	 	
+	  		   	 	<td>{{ $cuenta->CtaProvisionUrba }}</td>
+	  		   	 	
 	  		   	 </tr>
-	  		   </tbody>
-	  		   <tr>
+
+	  		   	 <tr>
 	  		   	 	<th scope="row">Cta. de provisión de GI:</th>
-	  		   	 	<td></td>
+	  		   	 	<td>{{ $cuenta->CtaProvisionGI }}</td>
 	  		   	</tr>
 	  		   	<tr>
 	  		   		<th scope="row">Cta. de provisión de GF:</th>
-	  		   		<td></td>
+	  		   		<td>{{ $cuenta->CtaProvisionGF }}</td>
 	  		   	</tr>
 	  		   	<tr>
 	  		   		<th scope="row">Cta. de compras:</th>
-	  		   		<td></td>
+	  		   		<td>{{ $cuenta->CtaCompras }}</td>
 	  		   	</tr>
                 <tr>
                 	<td>
                 		<a href="{{route('informe.cuentas.edit', 1)}}" title="" class="btn btn-warning">EDITAR</a>
                 	</td>
                 </tr>
+                @endforeach
+	  		   </tbody>
+	  		   
 	  			
 	  		</table>
 	  	</div>
