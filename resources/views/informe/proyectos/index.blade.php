@@ -41,7 +41,17 @@
 	  		    	</tr>
 	  		    </thead>
 	  		    <tbody>
-	  		    	<tr></tr>
+	  		    	@foreach ($proyectos as $proyecto)
+	  		    	<tr>
+	  		    		<td>{{ $proyecto->ProyectoNeodata }}</td>
+	  		    		<td>{{ $proyecto->NombreProyecto }}</td>
+	  		    		<td>{{ $proyecto->Activo }}</td>
+	  		    		<td>{{ $proyecto->EsObraPublica }}</td>
+	  		    		<td><a href="" class="btn btn-primary"><i class="fa fa-eye"></i></a></td>
+	  		    		<td><a href="{{route('informe.proyectos.edit', $proyecto->ProyectoNeodata)}}" class="btn btn-success"><i class="fa fa-pencil"></i></a></td>
+	  		    		<td><a href="" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+	  		    	</tr>
+	  		    	@endforeach
 	  		    </tbody>
 	  			
 	  		</table>

@@ -32,7 +32,15 @@
 	  		    	</tr>
 	  		    </thead>
 	  		    <tbody>
-	  		    	<tr></tr>
+	  		    	@foreach ($users as $user)
+	  		    	<tr>
+	  		    		<td>{{ $user->Nombre }}</td>
+	  		    		<td>{{ $user->usuario }}</td>
+	  		    		<td>{{ $user->Activo }}</td>
+	  		    		<td></td>
+	  		    		<td></td>
+	  		    	</tr>
+	  		    	@endforeach
 	  		    </tbody>
 	  			
 	  		</table>

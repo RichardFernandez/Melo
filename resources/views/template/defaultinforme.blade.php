@@ -13,6 +13,7 @@
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
     <link href="{{ asset('css/melo.css') }}" rel="stylesheet">
     <link href="{{ asset('css/informe.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
 
   </head>
 
