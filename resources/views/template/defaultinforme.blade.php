@@ -11,6 +11,7 @@
     <link href="{{ asset('libs/bootstrap/css/bootstrap-flexmin.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fa/css/font-awesome.css') }}" rel="stylesheet">
     <link href="{{ asset('css/melo.css') }}" rel="stylesheet">
     <link href="{{ asset('css/informe.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">

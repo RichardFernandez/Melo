@@ -79,12 +79,13 @@ return [
         ],
 
         'sqlsrv' => [
-                    'driver'   => 'sqlsrv',
-                    'host'     => env('DB_HOST', 'Host IP'),
-                    'database' => env('DB_DATABASE', 'forge'),
-                    'username' => env('DB_USERNAME', 'forge'),
-                    'password' => env('DB_PASSWORD', ''),
-                    'prefix'   => '',
+            'driver'   => 'sqlsrv',
+            'host'     => env('DB_HOST', 'RICHARD\MSSQLSERVER2012'),
+            'database' => env('DB_DATABASE', 'InformePrueba'),
+            'username' => env('DB_USERNAME', 'melo'),
+            'password' => env('DB_PASSWORD', 'davinci33'),
+            'Charset' => 'utf8',
+            'prefix'   => '',
                 ],
 
     ],

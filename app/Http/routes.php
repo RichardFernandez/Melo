@@ -17,6 +17,25 @@ Route::get('/control-panel', function(){
 	return view('controlpanel');
 });
 
+/*Rutas para crear el crud de todos os empleados de frupo melo*/
+
+Route::resource('empleados', 'EmpleadosController');
+
+Route::get('empleados/{id}/destroy',[
+    'uses' => 'EmpleadosController@destroy',
+    'as' => 'empleados.destroy'
+  ]);
+
+/*Rutas para el crud de empresas*/
+
+Route::resource('empresas', 'EmpresasController');
+
+Route::get('empresas/{id}/destroy', [
+   'uses' => 'EmpresasController@destroy',
+   'as' => 'empresas.destroy'
+  ]);
+
+
 /*Rutas para el sistema de informe financiero*/
 
 Route::group(['prefix' => 'informe'], function(){
@@ -49,6 +68,15 @@ Route::group(['prefix' => 'informe'], function(){
    Route::get('proyectos/{id}/destroy', [
         'uses' => 'ProyectosController@destroy',
         'as' => 'informe.proyectos.destroy'
+    ]);
+
+   /*Rutas para configuracion de proyectos*/
+
+   Route::resource('configuracionproyectos', 'ConfiguracionproyectosController');
+
+   Route::get('configuracionproyectos/{id}/destroy', [
+      'uses' => 'ConfiguracionproyectosController@destroy',
+      'as' => 'informe.configuracionproyectos.destroy'
     ]);
 
    /* Final de rutas de informe financiero*/
